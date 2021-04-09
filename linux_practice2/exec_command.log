@@ -1,0 +1,138 @@
+    1  vagrant ssh-config
+    2  sudo yum -y groupinstall "development tools"
+    3  sudo yum -y install epel-release wget
+    4  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    5  sudo rpm -Uvh remi-release-7.rpm
+    6  sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    7  php -v
+    8  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    9  php composer-setup.php
+   10  php -r "unlink('composer-setup.php');"
+   11  sudo mv composer.phar /usr/local/bin/composer
+   12  composer -v
+   13  ls /
+   14   ls /usr
+   15  ls
+   16   pwd
+   17  cd /vagrant
+   18  exit
+   19  ls
+   20  ls /
+   21  exit
+   22  ls /
+   23  cd /vagrant
+   24  pwd
+   25  mkdir server_lesson && cd server_lesson
+   26  git init
+   27  git status
+   28  git remote add origin https://github.com/Koju1524/Server_Lesson.git
+   29  git status
+   30  touch first.txt
+   31  ls
+   32   cd /vagrant
+   33  mkdir server_lesson/linux_practice/public
+   34  mkdir -p server_lesson/linux_practice/public
+   35   ls server_lesson server_lesson/linux_practice
+   36  touch server_lesson/linux_practice/public/index.php
+   37  ls server_lesson/linux_practice/public
+   38  cd /vagrant/server_lesson && ls
+   39   cd /vagrant/server_lesson/linux_practice/public
+   40  cp index.php index_bk.php
+   41  ls
+   42   cd /vagrant/server_lesson/linux_practice
+   43   cp -r public tmp
+   44  ls
+   45  ls ./ public tmp
+   46  cd /vagrant
+   47  mv server_lesson/linux_practice server_lesson/linux_practice1
+   48   mkdir linux_practice2 linux_practice3
+   49  mv ./linux_practice2 ./server_lesson
+   50  cd /vagrant/server_lesson/linux_practice1/tmp/
+   51  ls
+   52   rm *_bk.php
+   53  ls
+   54   cd /vagran
+   55  cd /vagran
+   56  cd /vagrant
+   57  rm server_lesson/first.txt
+   58  ls
+   59  rm -r linux_practice3
+   60   ls server_lesson
+   61  cd /vagrant/server_lesson
+   62  echo '# サーバレッスン' > README.md
+   63  echo 'Linuxプラクティス' >> README.md
+   64  echo '-----------------' >> README.md
+   65  cat README.md
+   66  cd /vagrant/server_lesson
+   67  vi README.md
+   68  git status
+   69  git remote add origin https://github.com/Koju1524/server_lesson.git
+   70  git add .README.md linux_practice1/
+   71  git add .README.md
+   72  git status
+   73  git add .README.md
+   74  git add README.md
+   75  git add linux_practice1/
+   76  git status
+   77  git commit -m 'assigment1'
+   78  git push origin master
+   79  cd /linux_practice2
+   80  cd /vagrant/server_lesson//linux_practice2
+   81  mkdir documents
+   82  ls
+   83  cd /vagrant/server_lesson//linux_practice2/documents
+   84  touch gizumo[01-50].md
+   85  ls
+   86  re gizumo[01-50].md
+   87  rm gizumo[01-50].md
+   88  ls
+   89  touch gizumo{01..50}.md
+   90  ls
+   91  cd /vagrant/server_lesson//linux_practice2
+   92  mkdir trash
+   93  ls
+   94  mv documents/gizumo{20..40}.md documents/trash
+   95  mv documents/gizumo{20..40}.md trash
+   96  cd /vagrant/server_lesson//linux_practice2/trash
+   97  ls
+   98  cd /vagrant/server_lesson//linux_practice2
+   99  ls
+  100  touch .gitignore
+  101  ls -al
+  102  vi .gitignore
+  103  cat .gitgnore
+  104  vi .gitignore
+  105  git status
+  106  history 300
+  107  histroy 300 > -p exec_command.log
+  108  touch exec_command.log
+  109  ls
+  110  ls -al
+  111  rm -p
+  112  rm ./-p
+  113  ls -al
+  114  histroy 300 > exec_command.log
+  115  histroy -w 300 > exec_command.log
+  116  cat exec_command.log
+  117  histroy 300 > exec_command.log
+  118  histroy -w > exec_command.log
+  119  histroy -r > exec_command.log
+  120  history -w > exec_command.log
+  121  cat  exec_command.log
+  122  cat exec_command.log
+  123  ls
+  124* 
+  125  history -w 300 > exec_command.log
+  126  cat  exec_command.log
+  127  cat exec_command.log
+  128  cd /vagrant/server_lesson//linux_practice2/exec_command.log
+  129  ls
+  130  rm 300
+  131  la
+  132  ls
+  133  cat exec_command.log
+  134  history
+  135  history -w > exec_command.log
+  136  cat exec_command.log
+  137  ls
+  138  history > exec_command.log
